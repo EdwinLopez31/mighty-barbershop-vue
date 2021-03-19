@@ -1,0 +1,62 @@
+.section{
+
+  @apply block;
+  @apply w-full; 
+  @apply uppercase;
+  @apply font-bold;
+  @apply text-transparent;
+
+
+  &-title-about{
+    @extend .section;
+    background-image: linear-gradient(to right, $lightBrown, $darkBrown);
+    background-clip: text;
+  }
+
+  &-title-branches{
+    @extend .section;
+    color: white;
+  }
+
+  &-title-rates{
+    @extend .section;
+    
+    background-image: linear-gradient(to right, $lightBrown, $darkBrown);
+    background-clip: text; 
+  }
+
+  &-title-testimonies{
+    @extend .section;
+    color: white;
+  }
+
+  &-title-booking{
+    @extend .section-title-testimonies
+  }
+
+}
+
+.text-gray{
+  color: $gray;
+}
+
+.heading-text{
+  &-primary{
+    transition: all .3s;
+    animation: moveInLeft 1.3s;
+
+    &-sub{
+      @apply mt-3;
+      transition: all .3s;
+      animation: moveInRight 1.3s;
+    }
+  }
+
+  &-tertiary{
+    @apply text-base;
+    @apply uppercase;
+    @apply font-extrabold;
+  
+  }
+}
+

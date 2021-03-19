@@ -1,0 +1,52 @@
+.section{
+  
+  &-about{
+
+    margin-top: -15vh;
+  }
+  
+  &-branches{
+    background-image: linear-gradient(to bottom right, rgba($darkBrown,.8), rgba($lightBrown,.8)), url('~assets/Essential.jpg');
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+    @apply pt-10;
+  }
+
+  &-testimonies{
+    @apply relative;
+    @apply pt-10;
+
+    @media screen and (min-width: 1024px) {
+      @apply mt-20;
+      clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+    }
+
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+    background-image: linear-gradient(to bottom right, rgba($darkBrown,.8), rgba($lightBrown,.8)), url('~assets/Essential.jpg');
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+
+  &-rates{
+    @apply grid;
+    @apply justify-center;
+    background-color:#f2f2f2;
+  }
+
+  &-booking{
+    @apply relative;
+    
+    background-image: linear-gradient(to bottom right, rgba($darkBrown,.8), rgba($lightBrown,.8)), url('~assets/booking/section-bg.jpg');
+    background-attachment: fixed;
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+}

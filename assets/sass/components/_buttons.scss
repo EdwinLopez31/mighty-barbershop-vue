@@ -1,0 +1,78 @@
+.btn-transparent{
+
+  display: inline; 
+  border-bottom: .2rem solid $darkBrown;
+  padding: .3rem;
+  transition: all .27s;
+
+  &:hover{
+    background-color: $darkBrown;
+    color: $white;
+  }
+}
+
+.btn{
+  @apply text-white;
+  @apply inline-block;
+  @apply uppercase;
+  transition: all .2s;
+  backface-visibility: hidden;
+  
+
+  &-filled{
+    background-image: linear-gradient(to bottom, rgba($darkBrown,.9), rgba($darkBrown,.95));
+    @apply p-4;
+    @apply px-5;
+    border-radius: 3rem;
+    @apply mb-20;
+    backface-visibility: hidden;
+  }
+  &:hover{
+    box-shadow: 0 3px 7px rgba(black, .6);
+    transform: translateY(-5%)
+  }
+}
+
+.circleScaleBtn {
+  padding: 12px 24px;
+  background-color: transparent;
+  color: $gray;
+  border-bottom: .2rem solid $darkBrown;
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.circleScaleBtn span {
+  z-index: 1;
+  position: relative;
+}
+
+.circleScaleBtn::before {
+  
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  transform: translate3d(-50%,-50%,0) scale3d(0,0,0);
+  transition: opacity .4s cubic-bezier(.19,1,.22,1),transform .75s cubic-bezier(.19,1,.22,1);
+  background-image: radial-gradient(circle at 100%, rgba($darkBrown,.75), rgba($lightBrown,.75));
+  opacity: 0;
+}
+
+.circleScaleBtn:hover span {
+  color: white;
+}
+
+.circleScaleBtn:hover::before {
+  opacity: 1;
+  transition-duration: .85s;
+  transform: translate3d(-50%,-50%,0) scale3d(1,1,1)
+}
+
+
+
