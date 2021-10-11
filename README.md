@@ -4,4 +4,4 @@ This is a mock-up website for a famous barbershop in Antipolo City.
 Made using Vue 2 and NuxtJS 
 
 
-This is the second website that I have made
+Disclaimer: I am not in any way connected with Mighty Barbershop Antipolo, this was just made for learning purposes only.
